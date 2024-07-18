@@ -1,0 +1,13 @@
+p{
+    width: 200px;
+    border: 5px solid;
+    border-radius: 10px;
+    background-color:  rgb(65, 223, 207);
+    margin: auto;
+    padding: 20px;
+
+}
+
+div{
+    margin: 20px;
+}

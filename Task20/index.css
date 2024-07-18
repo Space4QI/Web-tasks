@@ -1,0 +1,119 @@
+body {
+    background-color: rgb(238, 238, 238);        
+    margin: 7vw 20vw 7vw 25vw;
+}
+
+.layoutMasonry {
+    column-count: 3;
+    column-gap: 30px;
+    display: block;
+    padding: 1em 0 1em 0;
+}
+
+.layoutFlex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    border: 2px rgb(218, 218, 218);
+    background-color: white;
+    width: 17vw;
+    display: inline-block;
+    margin: 0 1em 10px 0;
+    border-radius: 7px;
+    box-shadow: 5px 3px 14px 0px rgba(34, 60, 80, 0.2);
+}
+
+.cardFlex {
+    position: relative;
+    border: 2px rgb(218, 218, 218);
+    background-color: white;
+    width: 15vw;
+    margin: 0 1em 10px 0;
+    border-radius: 7px;
+    box-shadow: 5px 3px 14px 0px rgba(34, 60, 80, 0.2);
+    
+    min-width: 136px;
+}
+
+img {
+    width: 100%;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+p {
+    margin: 20px;
+}
+
+.footer {
+    margin: -1px;
+    padding: 20px 0 20px 20px;
+    border-top: 2px solid rgb(218, 218, 218);
+   
+}
+
+.flexFooter {
+    box-sizing: border-box;
+    position: absolute;
+    flex-shrink: 0;
+    border-top: 2px rgb(219, 219, 219) solid;
+    height: 50px;
+    width: 100%;
+    bottom: 0;
+    margin: -1px 10px 10px 0;
+    padding: 20px 0 20px 20px;
+    background-color: white;
+}
+
+.upper {
+    margin-bottom: 70px;
+    flex-grow: 1;
+}
+
+@media screen and (min-width: 400px) and (max-width:1200px) {
+    .cardFlex
+    {
+        min-height: 55vw;
+    }
+    .flexFooter
+    {
+        min-height: 5vw;
+    }
+}
+    
+
+@media screen and (min-width: 200px) and (max-width:399px) {
+    .cardFlex
+    {
+        min-height: 99vw;
+    }
+}
+
+@media screen and (min-width: 200px) and (max-width: 840px) {
+    .layoutFlex {
+        flex-wrap: wrap;
+        max-width: 500px;
+        min-width: 500px;
+    }
+    .cardFlex {
+        width: 100px;
+    }
+    
+}
+
+@media screen and (min-width: 200px) and (max-width:1600px) {
+    .upper {
+       margin-bottom: 70px;
+    }
+
+    .flexFooter{
+        padding: 5px;
+        padding-left: 15px;
+        padding-right: 10px;
+    }
+
+    
+
+}

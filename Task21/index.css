@@ -1,0 +1,35 @@
+.section1::after{
+    content: "Viewport width is larger than 600px";
+    color: green;
+    display: inline-block;
+}
+
+.section2::after{
+    content: "Viewport height is larger than 600px";
+    color: green;
+    display: inline-block;
+}
+
+.section3::after{
+    content: "Aspect Ratio is larger than 8/5";
+    color: green;
+    display: inline-block;
+}
+
+@media(max-width: 600px){
+    .section1::after {
+        display: none;
+    }
+}
+
+@media(max-height: 600px){
+    .section2::after {
+        display: none;
+    }
+}
+
+@media(max-aspect-ratio: 8/5){
+    .section3::after {
+        display: none;
+    }
+}

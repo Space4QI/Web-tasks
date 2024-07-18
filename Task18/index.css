@@ -1,0 +1,45 @@
+body, ul {
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    border: 0.4rem black solid;
+    align-items: center;
+    background-color: white;
+    margin: 20px;
+    max-width: 1200px;
+    width: calc(33.33% - 40px); /* Примерно 1/3 ширины с учетом отступов */
+    max-width: 300px; /* Максимальная ширина элемента */
+    flex-grow: 1; /* Равномерное распределение пространства между элементами */
+    box-sizing: border-box; /* Учесть границы в расчетах ширины */
+    display: flex; /* Добавлено */
+    flex-direction: column; /* Добавлено */
+    justify-content: center; /* Добавлено */
+    align-items: center; /* Добавлено */
+}
+
+body {
+    background-color: lightgray;
+}
+
+ul {
+    flex-wrap: wrap;
+    list-style-type: none; /* Убрать маркеры списка */
+    padding: 0;
+    max-width: 1200px;
+}
+
+img {
+    padding: 20px;
+    max-width: 100%;
+    height: auto;
+    
+    box-sizing: border-box;
+}
+
+@media (min-width: 200px) and (max-width: 800px) { 
+    img {
+        padding: 2px;
+    }
+}
